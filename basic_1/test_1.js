@@ -44,6 +44,40 @@
 
 //Not A Number NaN
 
-let score = "50bc";
-console.log(Number(score));
+// let score = "50bc";
+// console.log(Number(score));
+
+// console.log(2 > 1);  //True
+
+// console.log("2" > 1); //True convert the string type value to number 
+
+// console.log(null > 0);   //false bcz of that 0 is not grater than 0 
+
+// console.log(null >= 0);  // true bcz 0 is euqal or greater that 0 
+
+// console.log(5 == "5");  // true convert it automatically string to number 
+
+// console.log(5==="5"); // false bcz they === it only compare value + datatype 
+
+// let name = "Haithem";
+// let city = name;
+// city = "Lahore";
+// console.log(name);
+// console.log(city);
+
+// cheat sheet 
+console.log(Number("123"));
+console.log(Number("123abc"));
+console.log(Boolean(0));
+console.log(Boolean(1));
+console.log(Boolean(" "));
+console.log(Boolean(""));
+console.log(5 == "5");
+console.log(5 === "5");
+console.log(null == undefined);
+console.log(null === undefined);
+console.log("10" + 5);
+console.log("10" - 5);
+console.log("10" * 5);
+console.log("10" / 5);
 
