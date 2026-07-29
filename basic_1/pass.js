@@ -1,6 +1,5 @@
 function passwordStrength()
-{
-    
+{  
     while(true)
         {
 
