@@ -1,2 +1,2 @@
-const heading = document.getElementById("heading");
-console.log(heading);
+const paras = document.querySelectorAll(".para");
+console.log(paras.length);

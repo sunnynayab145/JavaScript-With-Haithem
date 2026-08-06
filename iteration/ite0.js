@@ -20,8 +20,8 @@ for(const num of arr)
 const greet = "hello"
 for(const greete of greet)
 {
-    //console.log(`each char is ${greete}`);
-   // console.log("The Char in This String is : ", greete);
+//     console.log(`each char is ${greete}`);
+//    console.log("The Char in This String is : ", greete);
 }
 
 
