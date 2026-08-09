@@ -80,9 +80,38 @@
 //document.querySelector('.task-list').lastElementChild.remove()
 //console.log("After ---> ","Live Collection : ",coll.length,"Static List : ",list);
     //Question No3
-const price = document.getElementsByClassName("price");
-const pricearr = Array.from(price);
+//const price = document.getElementsByClassName("price");
+//const pricearr = Array.from(price);
 
+//const expensive = pricearr.filter(el => Number(el.dataset.value) > 20).map(el => Number(el.dataset.value));
+//console.log("prices over $20 : ",expensive);
+
+    //Question No4
+//const students = ['Aarav', 'Isha', 'Karan'];
+//const list = document.querySelector('.student-list');
+
+//students.forEach(name => {
+//  const li = document.createElement('li');
+//  li.textContent = name;
+ // list.appendChild(li);
+//});
+
+    //Question No4
+const container =  document.querySelector(".card-container");
+
+const card = document.createElement("div");
+card.classList.add("profile-card");
+
+const heading = document.createElement("h3");
+heading.textContent = "Learning With Haithem";
+
+const btn = document.createElement("button");
+btn.setAttribute("data-role","Follow");
+btn.textContent = "Follow";
+
+card.appendChild(heading);
+card.appendChild(btn);
+container.appendChild(card);
 
 
 </script>
