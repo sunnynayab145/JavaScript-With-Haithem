@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DOM Practice Markup</title>
+</head>
+<body style="background-color: black; color: white;">
+
+<!-- Q1 — fruit list -->
+<ul class="fruit-list">
+  <li class="fruit">Mango</li>
+  <li class="fruit">Apple</li>
+  <li class="fruit">Banana</li>
+  <li class="fruit">Guava</li>
+</ul>
+
+<!-- Q2 — task list -->
+<ul class="task-list">
+  <li class="task">Write code</li>
+  <li class="task">Test code</li>
+  <li class="task">Ship code</li>
+</ul>
+
+<!-- Q3 — prices -->
+<div class="cart">
+  <span class="price" data-value="15">$15</span>
+  <span class="price" data-value="42">$42</span>
+  <span class="price" data-value="8">$8</span>
+  <span class="price" data-value="30">$30</span>
+</div>
+
+<!-- Q4 — empty student list (you create the <li> items with JS) -->
+<ul class="student-list"></ul>
+
+<!-- Q5 — empty card container (you create the whole card with JS) -->
+<div class="card-container"></div>
+
+<!-- Q6 — tea steps -->
+<ol class="steps">
+  <li>Boil water</li>
+  <li>Add tea leaves</li>
+  <li>Serve hot</li>
+</ol>
+
+<!-- Q7 — orders -->
+<div class="orders">
+  <p class="order" data-status="pending">Order #101</p>
+  <p class="order" data-status="shipped">Order #102</p>
+  <p class="order" data-status="pending">Order #103</p>
+</div>
+
+<!-- Q8 — inventory -->
+<ul class="inventory">
+  <li class="item" data-stock="0">Sugar</li>
+  <li class="item" data-stock="12">Rice</li>
+  <li class="item" data-stock="0">Salt</li>
+  <li class="item" data-stock="5">Flour</li>
+</ul>
+
+<!-- Q9 — todo list -->
+<ul class="todo-items">
+  <li data-done="false">Buy groceries</li>
+  <li data-done="false">Walk the dog</li>
+</ul>
+
+<script>
+        // Question No1
+//const fruits = document.querySelectorAll('.fruit');
+//fruits.forEach(li => {
+// if (li.textContent.trim().length > 3) {
+//    li.classList.add('picked');
+//  }
+//});
+//console.log(`Checked ${fruits.length} fruits`);
+
+    //Question No2
+//const coll = document.getElementsByClassName("task");
+//const list = document.querySelectorAll(".task");
+//console.log("Before ---> ","Live Collection : ",coll.length,"Static List : ",list);
+//document.querySelector('.task-list').lastElementChild.remove()
+//console.log("After ---> ","Live Collection : ",coll.length,"Static List : ",list);
+    //Question No3
+const price = document.getElementsByClassName("price");
+const pricearr = Array.from(price);
+
+
+
+</script>
+
+</body>
+</html>
