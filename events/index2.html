@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="signup-form">
+  <input type="text" id="name" placeholder="Name">
+  <input type="email" id="email" placeholder="Email">
+  <button type="submit">Sign Up</button>
+</form>
+<p id="error" style="color: red;"></p>
+</body>
+<script>
+    const form = document.getElementById("signup-form");
+    const error = document.getElementById("error");
+
+    form.addEventListener("sumbit",function(e){
+        e.preventDefault();
+    })
+    const email = document.getElementById("email").value.trim();
+    const name = document.getElementById("name").value.trim();
+
+    if(!name || !email){
+        error.style.color = "red.";
+        error.textContent = "please fill in both feild.";
+        return;
+    }
+    error.style.color = 'green';
+  error.textContent = 'Signed up successfully!';
+  console.log('Submitted:', { name, email });
+
+</script>
+</html>
