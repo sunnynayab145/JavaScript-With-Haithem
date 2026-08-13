@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <div id="button-group">
+  <button data-label="A">A</button>
+  <button data-label="B">B</button>
+  <button data-label="C">C</button>
+  <button data-label="D">D</button>
+  <button data-label="E">E</button>
+</div>
+<p id="output">Clicks: 0</p>
+</body>
+<script>
+const buttonGroup = document.getElementById('button-group');
+const output = document.getElementById('output');
+let clickCount = 0;
+
+buttonGroup.addEventListener('click', function (event) {
+  // Only respond if a button was actually clicked
+  if (event.target.tagName !== 'BUTTON') return;
+
+  const label = event.target.dataset.label;
+  clickCount++;
+
+  if (label === 'E') {
+    alert('You found the special button!');
+  } else {
+    output.textContent = `Clicks: ${clickCount} (last clicked: ${label})`;
+    return;
+  }
+
+ // output.textContent = `Clicks: ${clickCount} (last clicked: ${label})`;
+});
+</script>
+</html>
